@@ -14,7 +14,7 @@ def get_student_info():
     return name, a, b, c
 
 
-# This function
+# This function computes the average and assign the performance level.
 def evaluate_performance(a,b,c):
     average = (a + b + c)/3
     if average >= 90 and average <= 100:
@@ -30,6 +30,7 @@ def evaluate_performance(a,b,c):
     display_report(average, name, a, b, c)
     return average
 
+# This function shows the student name, scores, average (two decimal places), and performance level.
 def display_report(average, name, a, b, c):
     print(f"Student Name: ", name)
     print(f"Assessment Scores: ", a and b and c )
