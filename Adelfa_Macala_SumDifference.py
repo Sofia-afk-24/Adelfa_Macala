@@ -1,18 +1,19 @@
 # Topic: Python Functions and Modular Programming
 # Activity Title: Sum and Difference Calculator
 
-number1 = int(input("Enter the first number: "))
-number2 = int(input("Enter the second number: "))
+# Challenge 1
 
-def calculate_sum():
-    global sum
-    sum = number1 + number2
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+def calculate_sum(num1, num2):
+    sum = num1 + num2
     print(f"Sum: {sum}")
 
-def calculate_difference():
-    global difference
-    difference = number1 - number2
+def calculate_difference(num1, num2):
+    difference = num1 - num2
     print(f"Difference: {difference}")
 
-calculate_sum()
-calculate_difference()
+calculate_sum(num1, num2)
+calculate_difference(num1, num2)
+
